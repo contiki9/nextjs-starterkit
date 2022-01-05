@@ -1,0 +1,58 @@
+import { Meta } from '@storybook/addon-docs'
+
+<Meta title="Docs/Intro" />
+
+## 利用している UI フレームワーク
+
+https://chakra-ui.com/
+
+## なぜ作った？
+
+コンポーネント駆動開発 (CDD)をしているため その開発工程を共有するために公開しています。
+
+Storybook では UI フレームワークにある全ての機能を掲載するのではなく、利用している機能を制限して明示する目的があります。これは Props も含まれます。
+
+機能を制限している目的はいつか UI フレームワークを差し替えるときのコストを抑えるためと UI フレームワークを Extends してそのアプリケーションに合わせたカスタマイズを Storybook を通して確認するためです。
+
+## ディレクトリ構成について
+
+本 Storybook は AtomicDesign で作られていません。
+理由としては実装レベルの Component 設計に AtomicDesign では混乱を呼ぶケースが経験上多かったためです。
+
+そのため本 Component のディレクトリ構成は下記のように区分しています。（React 上のディレクトリをすべてカバーしているものではありません。
+
+### Micro
+
+すべての Component 間で利用可能な Component.
+
+### Core
+
+ドメイン依存を持たない汎用的な Component.
+
+Core 間の Component を内部に埋め込むことは禁止する
+
+### Pattern
+
+ドメイン依存を持たない汎用的な Component.
+
+Micro/Core/Layout を組み合わせて作成される Component.
+
+### Catalog
+
+ドメイン依存を持ち、用途・目的を持った具体的な Component.
+
+### Layout
+
+レイアウトを構成するための用の Component.
+
+---
+
+以下は Storybook には掲載していないディレクトリです。
+
+### Global
+
+複数のページで利用され、ページの中で絶対に一つしか存在することが許されない Component.
+
+### Page
+
+特定の`pages`で利用される Component 郡です。

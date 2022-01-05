@@ -1,0 +1,53 @@
+{
+  "name": "nextjs-starterkit",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "devs": "next dev & npm run storybook",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "export": "yarn run build && next export && next-sitemap",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.15",
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "framer-motion": "^4.1.17",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-gtm-module": "^2.0.11",
+    "react-icons": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.11",
+    "@storybook/addon-docs": "^6.3.11",
+    "@storybook/addon-essentials": "^6.3.11",
+    "@storybook/addon-links": "^6.3.11",
+    "@storybook/react": "^6.3.11",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16.9.4",
+    "@types/react": "^17.0.21",
+    "@types/react-gtm-module": "^2.0.1",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "jest": "^27.4.6",
+    "next-sitemap": "^1.6.179",
+    "prettier": "2.4.1",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.4.3"
+  }
+}

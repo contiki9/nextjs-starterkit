@@ -1,0 +1,5 @@
+export { Heading } from './Heading'
+export type { HeadingProps } from './Heading'
+export { HeadingPostH1 } from './HeadingPostH1'
+export { HeadingPostH2 } from './HeadingPostH2'
+export { HeadingPostH3 } from './HeadingPostH3'
