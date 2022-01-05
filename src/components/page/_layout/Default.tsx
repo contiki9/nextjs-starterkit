@@ -9,7 +9,13 @@ export const DefaultLayout = ({
   children,
 }: DefaultLayoutProps): JSX.Element => {
   return (
-    <Box minH="calc(100vh - 32px)" bg="white" borderRadius="lg" p={6}>
+    <Box
+      minH="calc(100vh - 32px)"
+      minW="100%"
+      bg="white"
+      borderRadius="lg"
+      p={6}
+    >
       {children}
     </Box>
   )
