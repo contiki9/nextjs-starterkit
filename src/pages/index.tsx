@@ -8,7 +8,6 @@ export default function HomePage() {
   return (
     <Flex justify="center" align="center" direction="column">
       <Meta />
-      aaaaa
     </Flex>
   )
 }
