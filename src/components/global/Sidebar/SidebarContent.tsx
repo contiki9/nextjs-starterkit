@@ -18,30 +18,20 @@ import { ReactText } from 'react'
 import { MdLaunch } from 'react-icons/md'
 import Logo from '../../../../public/images/logo.svg'
 import { Button } from '../../core/Button'
-interface LinkItemProps {
-  name: string
-  icon: IconType
-  url: string
-}
 interface LinkSubItemProps {
   name: string
   url: string
 }
+interface LinkItemProps extends LinkSubItemProps {
+  icon: IconType
+}
 const LinkItems: Array<LinkItemProps> = [
   { name: 'ホーム', icon: MdHome, url: '/' },
-  { name: 'プロフィール', icon: MdPerson, url: '/profile' },
-  { name: '考え方', icon: MdLightbulb, url: '/idea' },
-  { name: '制作物', icon: MdWork, url: '/portfolio' },
-  { name: 'お問い合わせ', icon: MdEmail, url: '/contact' },
 ]
 const LinkSubItems: Array<LinkSubItemProps> = [
   {
-    name: '開発ガイドライン',
-    url: 'https://coding.cntlog.net/',
-  },
-  {
-    name: 'コンポーネントガイド',
-    url: 'https://cntlog-storybook.netlify.app/?path=/story/readme--page',
+    name: '外部リンク',
+    url: 'https://cntlog.net/',
   },
 ]
 interface SidebarProps extends BoxProps {
