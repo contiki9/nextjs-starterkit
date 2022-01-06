@@ -5,10 +5,11 @@ import { Sidebar } from '../components/global'
 import { Box } from '../components/micro'
 import TagManager from 'react-gtm-module'
 import { theme } from '../theme'
+import { gtmId } from 'site.config'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    TagManager.initialize({ gtmId: 'GTM-MP2W6Q' })
+    TagManager.initialize({ gtmId: gtmId })
   }, [])
 
   return (
