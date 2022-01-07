@@ -1,7 +1,7 @@
-import { siteDomain } from './site.config'
+const config = require('./site.config')
 
 module.exports = {
-  siteUrl: `https://${siteDomain}/`,
+  siteUrl: `https://${config.siteDomain}/`,
   generateRobotsTxt: true,
   sitemapSize: 7000,
   outDir: './out',
