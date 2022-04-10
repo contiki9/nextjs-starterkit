@@ -1,13 +1,36 @@
 const directoryType = ['core', 'global', 'layout', 'micro', 'pattern', 'page']
 
 module.exports = (plop) => {
-  plop.setGenerator('base component', {
-    description: '再利用可能なコンポーネントを作成する',
+  plop.setGenerator('simple component', {
+    description: 'シンプルなComponentを作成する',
     prompts: [
       {
         type: 'input',
         name: 'name',
         message: 'コンポーネント名は何ですか？',
+      },
+      {
+        type: 'input',
+        name: 'directory',
+        message: '作成するPathを教えて下さい',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/components/{{directory}}/{{pascalCase name}}.tsx',
+        templateFile: '.plop/Components.tsx.hbs',
+        skipIfExists: true,
+      },
+    ],
+  })
+  plop.setGenerator('base component', {
+    description: '再利用可能なComponentを作成する',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'Component名は何ですか？',
       },
       {
         type: 'list',
