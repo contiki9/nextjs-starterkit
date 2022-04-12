@@ -15,6 +15,7 @@
 - [next-sitemap](https://www.npmjs.com/package/next-sitemap)
 - [framer-motion](https://www.framer.com/motion/)
 - [React Icons](https://react-icons.github.io/react-icons/)
+- [plop](https://plopjs.com/)
 
 ## Getting Started
 
