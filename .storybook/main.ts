@@ -5,18 +5,19 @@ module.exports = {
     '../src/components/intro.stories.mdx',
     '../src/components/**/*.stories.@(js|jsx|ts|tsx)',
   ],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@chakra-ui/storybook-addon',
+  ],
   typescript: {
-    check: true,
-    checkOptions: {},
-    //reactDocgen: 'react-docgen-typescript',
-    // reactDocgenTypescriptOptions: {
-    //   include: [
-    //     '../src/components/**/*.stories.mdx',
-    //     '../src/components/**/*.stories.tsx',
-    //   ],
-    // },
-    //reactDocgen: false,
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      compilerOptions: {
+        allowSyntheticDefaultImports: true,
+        esModuleInterop: true,
+      },
+    },
   },
   webpackFinal: async (config) => {
     return {
