@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { Checkbox } from './Checkbox'
 export default {
-  title: 'Core/Checkbox',
+  title: 'Core/Form/Checkbox',
   component: Checkbox,
   argTypes: {},
 } as ComponentMeta<typeof Checkbox>
