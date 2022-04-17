@@ -5,11 +5,7 @@ module.exports = {
     '../src/components/intro.stories.mdx',
     '../src/components/**/*.stories.@(js|jsx|ts|tsx)',
   ],
-  addons: [
-    '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    '@chakra-ui/storybook-addon',
-  ],
+  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
   typescript: {
     reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
