@@ -6,6 +6,13 @@ import { Button, ButtonProps } from './Button'
 export default {
   title: 'Core/Button',
   component: Button,
+  parameters: {
+    docs: {
+      description: {
+        component: `Chakra UI <a href="https://chakra-ui.com/docs/components/form/button">Button</a>`,
+      },
+    },
+  },
   argTypes: {
     colorScheme: {
       control: {

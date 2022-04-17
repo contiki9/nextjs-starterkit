@@ -5,6 +5,13 @@ import { {{pascalCase name}} } from './{{pascalCase name}}'
 export default {
   title: '{{pascalCase directory}}/{{pascalCase name}}',
   component: {{pascalCase name}},
+    parameters: {
+    docs: {
+      description: {
+        component: `{{pascalCase name}}のコンポーネントです`,
+      },
+    },
+  },
   argTypes: {},
 } as ComponentMeta<typeof {{pascalCase name}}>;
 
