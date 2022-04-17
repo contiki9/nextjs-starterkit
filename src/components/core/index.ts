@@ -17,3 +17,4 @@ export * from './Badge'
 export * from './Alert'
 
 export * from './Progress'
+export * from './Tooltip'
