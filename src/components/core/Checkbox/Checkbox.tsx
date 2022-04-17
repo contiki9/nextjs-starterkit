@@ -5,6 +5,6 @@ export type CheckboxProps = React.ComponentProps<typeof ChkCheckbox>
 export const Checkbox: React.VFC<CheckboxProps> = ({
   children,
   ...CheckboxProps
-}: CheckboxProps): JSX.Element => {
+}): JSX.Element => {
   return <ChkCheckbox {...CheckboxProps}>{children}</ChkCheckbox>
 }

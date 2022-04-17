@@ -8,3 +8,4 @@ export * from './Textarea'
 export * from './Timeline'
 
 export * from './Checkbox'
+export * from './IconButton'
