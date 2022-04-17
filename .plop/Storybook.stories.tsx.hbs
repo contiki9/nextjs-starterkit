@@ -20,7 +20,11 @@ const Template:ComponentStory<typeof {{pascalCase name}}>  = (args) => (
   <{{pascalCase name}} {...args}>{args.children}</{{pascalCase name}}>
 )
 
+const DefaultAttr = {
+  children: '{{pascalCase name}}',
+}
+
 export const Default = Template.bind({})
 Default.args = {
-  children: '{{pascalCase name}}',
+  ...DefaultAttr
 }
