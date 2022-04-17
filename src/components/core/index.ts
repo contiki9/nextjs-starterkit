@@ -15,3 +15,5 @@ export * from './Select'
 export * from './Switch'
 export * from './Badge'
 export * from './Alert'
+
+export * from './Progress'
