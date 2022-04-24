@@ -19,9 +19,8 @@ const Template: ComponentStory<typeof Tooltip> = (args) => (
   <Tooltip {...args}>{args.children}</Tooltip>
 )
 
-
 const DefaultAttr = {
-  children:`Tooltip`,
+  children: `Tooltip`,
   label: `Hey, I'm here!`,
 }
 
