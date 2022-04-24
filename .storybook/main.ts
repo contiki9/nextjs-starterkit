@@ -15,6 +15,9 @@ module.exports = {
       },
     },
   },
+  refs: {
+    '@chakra-ui/react': { disable: true },
+  },
   webpackFinal: async (config) => {
     return {
       ...config,
