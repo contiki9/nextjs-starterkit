@@ -4,8 +4,9 @@ export type {{pascalCase name}}Props = {
   
 }
 
-export const {{pascalCase name}} = ({
-}: {{pascalCase name}}Props): JSX.Element => {
+export const {{pascalCase name}}:React.VFC<{{pascalCase name}}Props> = ({
+...{{pascalCase name}}Props
+}): JSX.Element => {
   return (
     <>
       New Components {{pascalCase name}}!
