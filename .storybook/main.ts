@@ -7,16 +7,16 @@ module.exports = {
   ],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
   typescript: {
-    check: true,
-    checkOptions: {},
-    //reactDocgen: 'react-docgen-typescript',
-    // reactDocgenTypescriptOptions: {
-    //   include: [
-    //     '../src/components/**/*.stories.mdx',
-    //     '../src/components/**/*.stories.tsx',
-    //   ],
-    // },
-    //reactDocgen: false,
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      compilerOptions: {
+        allowSyntheticDefaultImports: true,
+        esModuleInterop: true,
+      },
+    },
+  },
+  refs: {
+    '@chakra-ui/react': { disable: true },
   },
   webpackFinal: async (config) => {
     return {

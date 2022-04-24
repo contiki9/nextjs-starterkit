@@ -1,10 +1,17 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { {{pascalCase name}} } from './{{pascalCase name}}'
+import { {{pascalCase name}} } from './index'
 export default {
   title: '{{pascalCase directory}}/{{pascalCase name}}',
   component: {{pascalCase name}},
+  parameters: {
+    docs: {
+      description: {
+        component: `{{pascalCase name}}のコンポーネントです`,
+      },
+    },
+  },
   argTypes: {},
 } as ComponentMeta<typeof {{pascalCase name}}>;
 
@@ -13,7 +20,11 @@ const Template:ComponentStory<typeof {{pascalCase name}}>  = (args) => (
   <{{pascalCase name}} {...args}>{args.children}</{{pascalCase name}}>
 )
 
+const DefaultAttr = {
+  children: '{{pascalCase name}}',
+}
+
 export const Default = Template.bind({})
 Default.args = {
-  children: '{{pascalCase name}}',
+  ...DefaultAttr
 }

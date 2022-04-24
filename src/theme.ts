@@ -2,6 +2,7 @@ import { extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
 
 export const colors = {
   primary: {
+    main: '#0EA5E9',
     50: '#F0F9FF',
     100: '#E0F2FE',
     200: '#BAE6FD',
@@ -14,6 +15,7 @@ export const colors = {
     900: '#0C4A6E',
   },
   gray: {
+    main: '#718096',
     50: '#F7FAFC',
     100: '#EDF2F7',
     200: '#E2E8F0',
@@ -29,7 +31,9 @@ export const colors = {
 
 export const theme = extendTheme(
   {
-    colors,
+    colors: {
+      ...colors,
+    },
   }
   //withDefaultColorScheme({ colorScheme: 'primary' })
 )
