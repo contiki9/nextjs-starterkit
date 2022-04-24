@@ -18,3 +18,4 @@ export * from './Alert'
 
 export * from './Progress'
 export * from './Tooltip'
+export * from './Breadcrumb'
