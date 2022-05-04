@@ -1,8 +1,8 @@
 import { useDisclosure } from '@chakra-ui/react'
 import React from 'react'
-import { Meta } from '../components/global'
-import { Flex } from '../components/layout'
-import { DefaultLayout } from '../components/page/_layout'
+import { Meta } from 'src/components/global'
+import { Flex } from 'src/components/layout'
+import { DefaultLayout } from 'src/components/page/_layout'
 import { Button } from 'src/components/core'
 
 export default function HomePage() {
