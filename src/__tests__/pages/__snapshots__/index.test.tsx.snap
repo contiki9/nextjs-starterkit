@@ -4,6 +4,18 @@ exports[`ホームページ 1`] = `
 <div>
   <div
     class="css-u6v8er"
-  />
+  >
+    <div
+      class="css-oadac5"
+    >
+      contents here
+      <button
+        class="chakra-button css-yh9qm"
+        type="button"
+      >
+        Button
+      </button>
+    </div>
+  </div>
 </div>
 `;

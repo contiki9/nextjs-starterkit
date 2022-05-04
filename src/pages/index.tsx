@@ -3,6 +3,7 @@ import React from 'react'
 import { Meta } from '../components/global'
 import { Flex } from '../components/layout'
 import { DefaultLayout } from '../components/page/_layout'
+import { Button } from 'src/components/core'
 
 export default function HomePage() {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -10,7 +11,10 @@ export default function HomePage() {
     <>
       <Meta />
       <Flex justify="center" align="center" direction="column">
-        <DefaultLayout>contents here</DefaultLayout>
+        <DefaultLayout>
+          contents here
+          <Button>Button</Button>
+        </DefaultLayout>
       </Flex>
     </>
   )

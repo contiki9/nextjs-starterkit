@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> 初期表示 1`] = `
+<Button
+  color="primary.500"
+  size="md"
+  variant="solid"
+>
+  Button
+</Button>
+`;
