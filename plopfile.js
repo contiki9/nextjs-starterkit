@@ -20,7 +20,7 @@ const fileTestComponents = {
 }
 
 module.exports = (plop) => {
-  plop.setGenerator('simple component', {
+  plop.setGenerator('Simple component', {
     description: 'シンプルなComponentを作成する',
     prompts: [
       {
@@ -36,7 +36,7 @@ module.exports = (plop) => {
     ],
     actions: [fileComponents],
   })
-  plop.setGenerator('simple Test', {
+  plop.setGenerator('Simple Test', {
     description: 'シンプルなTestを作成する',
     prompts: [
       {
@@ -52,7 +52,7 @@ module.exports = (plop) => {
     ],
     actions: [fileTestComponents],
   })
-  plop.setGenerator('base component', {
+  plop.setGenerator('Base component', {
     description: '再利用可能なComponentを作成する',
     prompts: [
       {
@@ -83,6 +83,35 @@ module.exports = (plop) => {
       fileComponents,
       fileStory,
       fileTestComponents,
+    ],
+  })
+  plop.setGenerator('Pages Component', {
+    description: '新しいPagesを作成する',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'Pageの名前は何ですか？',
+      },
+      {
+        type: 'input',
+        name: 'directory',
+        message: '作成するPageのPathを教えて下さい',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/pages/{{pathCase directory}}/index.tsx',
+        templateFile: '.plop/PageComponents.tsx.hbs',
+        skipIfExists: true,
+      },
+      {
+        type: 'add',
+        path: 'src/pages/{{pathCase directory}}/index.test.tsx',
+        templateFile: '.plop/PageComponents.test.tsx.hbs',
+        skipIfExists: true,
+      },
     ],
   })
 }

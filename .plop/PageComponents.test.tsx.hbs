@@ -1,0 +1,8 @@
+import React from 'react'
+import {{pascalCase name}} from 'src/pages'
+import { render } from 'src/__tests__/utils'
+
+test('{{pascalCase name}}', () => {
+  const { container } = render(<{{pascalCase name}} />)
+  expect(container).toMatchSnapshot()
+})
