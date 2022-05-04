@@ -14,7 +14,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "export": "yarn run build && next export && next-sitemap",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "template": "plop"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
