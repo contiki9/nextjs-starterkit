@@ -16,5 +16,8 @@
     "MDXH",
     "mobilenav",
     "xlight"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
