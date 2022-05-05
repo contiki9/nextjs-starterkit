@@ -17,6 +17,17 @@
     "postbuild": "next-sitemap",
     "template": "plop"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": "tsc",
+    "*.@(js|ts|tsx)": "yarn run lint --fix",
+    "*.test.@(js|ts|tsx)": "yarn test"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
     "@chakra-ui/react": "^1.8.8",
@@ -50,7 +61,9 @@
     "eslint-config-next": "12.1.5",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^7.0.4",
     "jest": "^27.5.1",
+    "lint-staged": "^12.4.1",
     "next-sitemap": "^1.9.12",
     "plop": "^3.0.5",
     "prettier": "2.6.2",
