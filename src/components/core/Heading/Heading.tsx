@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Heading as ChkHeading } from '@chakra-ui/react'
 
 export interface HeadingProps {

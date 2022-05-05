@@ -1,5 +1,6 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+
+import { Meta } from '@storybook/react/types-6-0'
 
 import { HeadingPostH1, HeadingPostH2, HeadingPostH3 } from './index'
 export default {

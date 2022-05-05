@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Divider as ChkDivider } from '@chakra-ui/react'
 
 export type DividerProps = {

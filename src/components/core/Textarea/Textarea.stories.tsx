@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { Story, Meta } from '@storybook/react'
+
 import { Textarea, TextareaProps } from './index'
 export default {
   title: 'Core/Form/Textarea',

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Box as ChkBox, BoxProps as ChkBoxProps } from '@chakra-ui/react'
 
 export interface BoxProps extends ChkBoxProps {

@@ -1,6 +1,8 @@
-import React from 'react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
+import React from 'react'
+import { ReactText } from 'react'
+
 import {
   Box,
   Divider,
@@ -12,10 +14,10 @@ import {
   FlexProps,
   Stack,
 } from '@chakra-ui/react'
-import { MdHome, MdPerson, MdWork, MdEmail, MdLightbulb } from 'react-icons/md'
 import { IconType } from 'react-icons'
-import { ReactText } from 'react'
+import { MdHome } from 'react-icons/md'
 import { MdLaunch } from 'react-icons/md'
+
 import Logo from '../../../../public/images/logo.svg'
 import { Button } from '../../core/Button'
 interface LinkSubItemProps {

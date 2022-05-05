@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { Box } from '@chakra-ui/react'
+
 import { colors } from '../../../theme'
 
 import { Heading, HeadingProps } from './index'

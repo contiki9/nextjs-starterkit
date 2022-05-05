@@ -1,9 +1,12 @@
-import { useDisclosure } from '@chakra-ui/react'
 import React from 'react'
+
+import { useDisclosure } from '@chakra-ui/react'
+
+import { DefaultLayout } from 'src/components/page/_layout'
+
+import { Button } from 'src/components/core'
 import { Meta } from 'src/components/global'
 import { Flex } from 'src/components/layout'
-import { DefaultLayout } from 'src/components/page/_layout'
-import { Button } from 'src/components/core'
 
 export default function HomePage() {
   const { isOpen, onOpen, onClose } = useDisclosure()

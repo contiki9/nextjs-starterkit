@@ -22,27 +22,37 @@
         "pathGroups": [
           // ここに書いた順序で間に1行空行をあけつつ整頓される
           {
-            "pattern": "{react,react-dom/**,react-router-dom}",
+            "pattern": "{react,react-dom/**,react-router-dom,next/**}",
             "group": "builtin",
             "position": "before"
           },
           {
-            "pattern": "@/components/core/**",
+            "pattern": "src/components/global/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/components/micro/**",
+            "pattern": "src/components/layout/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/components/pattern/**",
+            "pattern": "src/components/core/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/components/page/**",
+            "pattern": "src/components/micro/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "src/components/pattern/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "src/components/page/**",
             "group": "internal",
             "position": "before"
           },

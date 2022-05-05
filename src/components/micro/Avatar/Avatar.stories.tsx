@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { ComponentStory, ComponentMeta } from '@storybook/react'
+
 //import { AvatarGroup } from '@chakra-ui/react'
 import { Avatar, AvatarGroup } from './index'
 export default {

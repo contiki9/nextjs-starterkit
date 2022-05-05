@@ -1,4 +1,5 @@
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
+
 import {
   Textarea as ChkTextarea,
   TextareaProps as ChkTextareaProps,

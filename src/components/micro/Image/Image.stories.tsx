@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { Story, Meta } from '@storybook/react'
+
 import { Image, ImageProps } from './index'
 export default {
   title: 'Micro/Images',
