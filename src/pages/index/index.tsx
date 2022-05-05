@@ -16,7 +16,7 @@ export default function HomePage() {
       <Flex justify="center" align="center" direction="column">
         <DefaultLayout>
           contents here
-          <Button></Button>
+          <Button hoge="sss">Button</Button>
         </DefaultLayout>
       </Flex>
     </>
