@@ -1,9 +1,8 @@
 import React from 'react'
-import { SpaceProps } from '@chakra-ui/styled-system'
+
 import {
   Stack as ChkStack,
   StackProps as ChkStackProps,
-  StackDirection,
   SystemProps,
 } from '@chakra-ui/react'
 

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Text as ChkText } from '@chakra-ui/react'
 
 export type TextProps = {

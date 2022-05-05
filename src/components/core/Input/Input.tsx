@@ -1,4 +1,5 @@
-import React, { HTMLInputTypeAttribute, HTMLAttributes } from 'react'
+import React, { HTMLInputTypeAttribute } from 'react'
+
 import {
   Input as ChkInput,
   InputProps as ChkInputProps,

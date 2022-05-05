@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import { siteName, siteDomain } from '../../../../site.config'
 export interface MetaProps {
   title?: string

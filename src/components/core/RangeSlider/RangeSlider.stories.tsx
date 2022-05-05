@@ -1,4 +1,6 @@
 import React from 'react'
+
+import { RangeSliderThumb } from '@chakra-ui/react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { RangeSlider } from './RangeSlider'
@@ -7,8 +9,6 @@ export default {
   component: RangeSlider,
   argTypes: {},
 } as ComponentMeta<typeof RangeSlider>
-
-import { RangeSliderThumb } from '@chakra-ui/react'
 
 const Template: ComponentStory<typeof RangeSlider> = (args) => (
   <RangeSlider {...args} />

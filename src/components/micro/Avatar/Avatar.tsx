@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Avatar as ChkAvatar, AvatarBadge } from '@chakra-ui/react'
 export type AvatarProps = {
   isShowBadge?: boolean

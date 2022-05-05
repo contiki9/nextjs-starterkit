@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react'
+
 import {
   Title,
   Primary,
@@ -7,8 +7,11 @@ import {
   Stories,
   PRIMARY_STORY,
 } from '@storybook/addon-docs'
+import { Story, Meta } from '@storybook/react'
+
 import { Button, Divider as DividerAs } from '../../core'
 import { Box } from '../../micro'
+
 import { Stack, StackProps } from './index'
 export default {
   title: 'Layout/Stack',

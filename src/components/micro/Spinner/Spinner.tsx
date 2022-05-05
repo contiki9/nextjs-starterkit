@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Spinner as ChkSpinner } from '@chakra-ui/react'
 export type SpinnerProps = React.ComponentProps<typeof ChkSpinner>
 

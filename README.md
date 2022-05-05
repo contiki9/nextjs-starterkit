@@ -5,12 +5,11 @@
 ### 追加したもの
 
 - [TypeScript](https://www.typescriptlang.org/)
-- [storybook](https://storybook.js.org/)
-- [ESLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
+- [Storybook](https://storybook.js.org/)
+- [ESLint](https://eslint.org/) / [Prettier](https://prettier.io/)
 - [Chakra UI](https://chakra-ui.com/)
 - [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/)
-- [Jest](https://jestjs.io/ja/)
+- [Jest](https://jestjs.io/ja/) / [react-test-renderer](https://ja.reactjs.org/docs/test-renderer.html)
 - [react-gtm-module](https://www.npmjs.com/package/react-gtm-module)
 - [next-sitemap](https://www.npmjs.com/package/next-sitemap)
 - [framer-motion](https://www.framer.com/motion/)

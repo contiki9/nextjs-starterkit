@@ -1,5 +1,6 @@
-import { Tag as ChkTag, TagLabel, Flex, Box, FlexProps } from '@chakra-ui/react'
 import React from 'react'
+
+import { Tag as ChkTag, TagLabel, Flex, Box, FlexProps } from '@chakra-ui/react'
 
 export type TagProps = {
   /**

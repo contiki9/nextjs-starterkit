@@ -48,6 +48,8 @@
     "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "jest": "^27.5.1",
     "next-sitemap": "^1.9.12",
     "plop": "^3.0.5",

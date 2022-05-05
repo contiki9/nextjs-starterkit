@@ -1,6 +1,7 @@
 import React from 'react'
-import HomePage from 'src/pages/index'
+
 import { render } from 'src/__tests__/utils'
+import HomePage from 'src/pages/index'
 
 test('ホームページ', () => {
   const { container } = render(<HomePage />)

@@ -1,8 +1,8 @@
 import React from 'react'
+
 import {
   BreadcrumbItem as ChkBreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbSeparator,
 } from '@chakra-ui/react'
 export type BreadcrumbItemProps = {
   isSeparator?: boolean

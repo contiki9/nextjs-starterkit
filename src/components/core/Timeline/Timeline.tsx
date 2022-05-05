@@ -1,6 +1,7 @@
+import React from 'react'
+
 import {
   Box,
-  HStack,
   Stack,
   Flex,
   Circle,
@@ -9,7 +10,6 @@ import {
   Heading,
   StackProps,
 } from '@chakra-ui/react'
-import React from 'react'
 
 import { Tag } from '../Tag'
 export interface TimelineProps {

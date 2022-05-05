@@ -1,4 +1,5 @@
-import React, { ReactText } from 'react'
+import React from 'react'
+
 import {
   IconButton,
   Flex,
@@ -7,6 +8,7 @@ import {
   FlexProps,
 } from '@chakra-ui/react'
 import { FiMenu } from 'react-icons/fi'
+
 import Logo from '../../../../public/images/logo.svg'
 interface MobileProps extends FlexProps {
   onOpen: () => void

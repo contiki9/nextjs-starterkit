@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Badge as ChkBadge } from '@chakra-ui/react'
 export type BadgeProps = React.ComponentProps<typeof ChkBadge>
 

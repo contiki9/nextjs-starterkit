@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { Drawer, DrawerContent, useDisclosure } from '@chakra-ui/react'
+
 import { SidebarContent, MobileNav } from '../../global/Sidebar/'
 export const Sidebar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
