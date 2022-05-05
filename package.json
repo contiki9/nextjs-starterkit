@@ -9,13 +9,22 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
+    "check": "yarn test && tsc --noEmit",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "export": "yarn run build && next export && next-sitemap",
     "postbuild": "next-sitemap",
-    "template": "plop"
+    "template": "plop",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "yarn run lint . --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
@@ -50,7 +59,9 @@
     "eslint-config-next": "12.1.5",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^7.0.4",
     "jest": "^27.5.1",
+    "lint-staged": "^12.4.1",
     "next-sitemap": "^1.9.12",
     "plop": "^3.0.5",
     "prettier": "2.6.2",
