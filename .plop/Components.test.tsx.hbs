@@ -1,0 +1,12 @@
+import React from 'react'
+import ShallowRenderer from 'react-test-renderer/shallow'
+import { {{pascalCase name}} } from './index'
+
+const render = ShallowRenderer.createRenderer()
+describe('<{{pascalCase name}} />', () => {
+  it('初期表示', () => {
+    render.render(<{{pascalCase name}} />)
+    const container = render.getRenderOutput()
+    expect(container).toMatchSnapshot()
+  })
+})
